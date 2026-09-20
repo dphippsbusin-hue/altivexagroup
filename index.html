@@ -75,10 +75,13 @@
     padding: 25px 6%;
   }
   .logo {
-    font-size: 1.4rem;
-    font-weight: 700;
-    letter-spacing: 1px;
-  }
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    height: 60px;
+    width: auto;
+    z-index: 1000;
+}
   .logo span { color: var(--accent); }
   nav a {
     color: var(--text-light);
@@ -191,11 +194,8 @@
 </div>
 
 <header>
-  <div class="logo">ALTI<span>VEXA</span> GROUP</div>
-  <nav>
-    <a href="#services">Services</a>
-    <a href="#contact">Contact</a>
-  </nav>
+    <img src="images/logo.png" alt="Altivexa Group Logo" class="logo">
+    <!-- rest of your header content -->
 </header>
 
 <main>
