@@ -192,6 +192,10 @@
   }
   /* Consultation Button */
 .consultation-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
     background-color: #1a73e8;
     color: white;
     padding: 14px 28px;
@@ -200,7 +204,6 @@
     border: none;
     border-radius: 6px;
     cursor: pointer;
-    margin: 20px;
 }
 
 .consultation-btn:hover {
@@ -309,8 +312,7 @@
 </div>
 
 <header>
-    <img src="images/logo.png" alt="Altivexa Group Logo" class="logo">
-    <!-- rest of your header content -->
+   
 </header>
 
 <main>
@@ -321,7 +323,7 @@
       inspections and consulting for aircraft buyers and sellers —
       protecting your investment before you ever leave the ground.
     </p>
-    <a href="#contact" class="cta-btn">Request a Consultation</a>
+    <a href="javascript:void(0)" onclick="openModal()" class="cta-btn">Request a Consultation</a>
   </section>
 
   <section class="services" id="services">
